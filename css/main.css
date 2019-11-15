@@ -38,7 +38,7 @@ article h1 {
 
 article header {
   border-bottom: 1px solid #999;
-  margin-bottom: 1.30rem;
+  margin-bottom: 1.3rem;
 }
 
 article header p {
@@ -65,7 +65,7 @@ blockquote p {
   padding-left: 0;
 }
 
-p {
+article p {
   margin-bottom: 1.30rem;
 }
 
@@ -77,10 +77,10 @@ p:nth-child(3) {
   margin: 0;
 }
 
-ol {
+article ol {
   margin: 0;
   padding: 0 1rem;
-  margin-bottom: 1.30rem
+  margin-bottom: 1.30rem;
 }
 
 .quote {
@@ -94,6 +94,16 @@ ol {
     line-height: 1.4;
   }
 
+  article h1 {
+    margin-top: 1.50rem;
+  }
+
+  article header {
+    margin-bottom: 1.50rem;
+  }
+
+}
+
 @media only screen and (min-width: 60em) {
 
   html {
@@ -101,8 +111,17 @@ ol {
     line-height: 1.5;
   }
 
-  article h1 {
-    margin-top: 5rem;
+  article header p {
+    margin-bottom: 1.50rem;
+  }
+
+  article {
+    max-width: 60em;
+    padding: 0 4.50rem;
+  }
+
+  article p {
+    margin-bottom: 1.50rem;
   }
 }
 
@@ -110,5 +129,18 @@ ol {
 
   html {
     font-size: 130%;
+  }
+
+  article header p {
+    margin-bottom: 1.50rem;
+  }
+
+  article {
+    max-width: 60em;
+    padding: 0 10rem;
+  }
+
+  article p {
+    margin-bottom: 1.50rem;
   }
 }
